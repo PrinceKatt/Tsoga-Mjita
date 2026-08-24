@@ -12,6 +12,7 @@
             --card-bg: #1e293b;
             --text-light: #f8fafc;
             --text-muted: #94a3b8;
+            --whatsapp-clr: #25d366;
         }
         * {
             box-sizing: border-box;
@@ -142,7 +143,21 @@
             display: inline-block;
             font-size: 0.9rem;
         }
-        /* FORM SECTION STYLING */
+        .whatsapp-btn {
+            background-color: var(--whatsapp-clr);
+            color: #fff;
+            padding: 0.6rem 1.2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+            text-align: center;
+        }
+        .whatsapp-btn:hover {
+            opacity: 0.9;
+        }
         .form-section {
             max-width: 600px;
             margin: 3rem auto;
@@ -223,25 +238,27 @@
     <section class="hero">
         <h1>TSOGA MJITA</h1>
         <p>Connecting Lebowakgomo with breaking local updates, authentic streetwear brands, and elite graphic design services.</p>
+        <!-- Quick Action WhatsApp Link -->
+        <a href="https://wa.me!" class="whatsapp-btn" target="_blank">💬 Chat on WhatsApp</a>
     </section>
 
     <!-- NEWS SECTION -->
     <div class="section-title" id="news">Lebowakgomo News <span>Local Updates</span></div>
     <section class="container-grid">
         <div class="content-card">
-            <div class="card-img-placeholder">News Visual</div>
+            <div class="card-img-placeholder">📰 Community Bulletin</div>
             <div class="card-body">
-                <span class="card-tag">Community Notice</span>
-                <h3>Local Development Update</h3>
-                <p>Stay informed about the newest infrastructure changes, clean-up operations, and development projects happening around Lebowakgomo.</p>
+                <span class="card-tag">Local Notice</span>
+                <h3>Lebowakgomo Economic Hub Development</h3>
+                <p>Stay informed about upcoming community programs, entrepreneurial initiatives, and local development projects aimed at empowering our youth right here in Limpopo.</p>
             </div>
         </div>
         <div class="content-card">
-            <div class="card-img-placeholder">Business Feature</div>
+            <div class="card-img-placeholder">🚀 Creative Launch</div>
             <div class="card-body">
-                <span class="card-tag">Entrepreneurship</span>
-                <h3>Empowering Local Creatives</h3>
-                <p>TSOGA MJITA launches a new digital platform to spotlight grassroots talent, indie labels, and custom services.</p>
+                <span class="card-tag">Business Feature</span>
+                <h3>TSOGA MJITA Media Portal Drops Natively</h3>
+                <p>Our official creative engine launches online to spotlight digital design structures, custom street apparel, and credible news report structures across the community.</p>
             </div>
         </div>
     </section>
@@ -250,12 +267,12 @@
     <div class="section-title" id="brands">Our Product Brands <span>Official Clothing</span></div>
     <section class="container-grid">
         <div class="content-card">
-            <div class="card-img-placeholder">Product Showcase</div>
+            <div class="card-img-placeholder">👕 Merchandise Studio</div>
             <div class="card-body">
                 <span class="card-tag" style="background-color:#10b981;">Apparel</span>
                 <h3>Premium TSOGA MJITA Streetwear</h3>
-                <p>High-quality garments and merchandise conceptualized and designed locally. Built to last.</p>
-                <a href="#contact" class="buy-btn">Order via Inquiry</a>
+                <p>High-quality garments, graphics-heavy t-shirts, and tailored hoodies conceptualized and printed locally. Secure yours directly today.</p>
+                <a href="https://wa.me" class="whatsapp-btn" target="_blank">🛍️ Order on WhatsApp</a>
             </div>
         </div>
     </section>
@@ -264,28 +281,8 @@
     <div class="section-title" id="design">Graphic Design Studio <span>Creative Solutions</span></div>
     <section class="container-grid">
         <div class="content-card">
-            <div class="card-img-placeholder">Design Portfolio</div>
+            <div class="card-img-placeholder">🎨 Portfolio Asset</div>
             <div class="card-body">
                 <span class="card-tag" style="background-color:#8b5cf6;">Design Service</span>
-                <h3>Logos, Branding & Print Layouts</h3>
-                <p>Professional vector assets, dynamic flyer designs, identity toolkits, and crisp, publication-ready layouts.</p>
-                <a href="#contact" class="buy-btn" style="background-color: transparent; border: 1px solid var(--accent-clr); color: var(--accent-clr);">Book a Session</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT FORM SECTION -->
-    <div class="section-title" id="contact">Get In Touch <span>Secure Mailbox</span></div>
-    <section class="form-section">
-        <!-- Formspree action url handles backend delivery directly to your inbox -->
-        <form action="https://formspree.io" method="POST">
-            <div class="form-group">
-                <label for="name">Your Name / Business Name:</label>
-                <input type="text" id="name" name="name" required placeholder="e.g. Thabo Khumalo">
-            </div>
-            <div class="form-group">
-                <label for="contact-info">Your Phone Number or Email:</label>
-                <input type="text" id="contact-info" name="contact" required placeholder="e.g. 072 123 4567">
-            </div>
-            <div class="form-group">
-
+                <h3>Professional Logos, Posters & Branding</h3>
+                <p>Get elite vector files, custom marketing flyers, business card layouts, and complete brand typography design with fast delivery turnarounds.</p>
